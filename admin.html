@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style data-styles=""></style>
+
+  <!-- Required meta tags -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Meta -->
+  <meta name="description" content="Responsive Bootstrap 4 Dashboard Template">
+  <meta name="author" content="BootstrapDash">
+
+  <title>Ayoba e-commerce</title>
+
+  <!-- vendor css -->
+  <link href="./Azia Responsive Bootstrap 4 Dashboard Template_files/all.min.css" rel="stylesheet">
+  <link href="./Azia Responsive Bootstrap 4 Dashboard Template_files/ionicons.min.css" rel="stylesheet">
+  <link href="./Azia Responsive Bootstrap 4 Dashboard Template_files/typicons.css" rel="stylesheet">
+  <link href="./Azia Responsive Bootstrap 4 Dashboard Template_files/flag-icon.min.css" rel="stylesheet">
+
+  <!-- azia CSS -->
+  <link rel="stylesheet" href="./Azia Responsive Bootstrap 4 Dashboard Template_files/azia.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <div class="header_section header_main">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="logo"><a href="#"><img src="images/logo.png"></a></div>
+        </div>
+      </div>
+    </div>
+  </div>>
+  <!-- az-header -->
+
+  <div class="az-content az-content-dashboard">
+    <div class="container">
+      <div class="az-content-body">
+        <div class="az-dashboard-one-title">
+          <div>
+            <h2 class="az-dashboard-title">Hi Admin, welcome back!</h2>
+            <p class="az-dashboard-text">Your product analytics dashboard</p>
+          </div>
+          <div class="row justify-content-center">
+            <a href="transaction-success.html">
+              <button class="done-btn">Post Product</button>
+            </a>
+          </div>
+          <div class="az-dashboard-nav">
+            <nav class="nav">
+              <a class="nav-link active" data-toggle="tab"
+                href="https://www.bootstrapdash.com/demo/azia-free/template/#">
+                <h1>Overview</h1>
+              </a>
+            </nav>
+          </div>
+
+          <div class="row row-sm mg-b-20">
+            <div class="col-lg-7 ht-lg-100p">
+              <div class="card card-dashboard-one">
+                <div class="card-header">
+                  <div>
+                    <h6 class="card-title">Sales Analysis Metrics</h6>
+                  </div>
+                  <div class="btn-group">
+                    <button class="btn active">Day</button>
+                    <button class="btn">Week</button>
+                    <button class="btn">Month</button>
+                  </div>
+                </div><!-- card-header -->
+                <div class="card-body">
+                  <div class="card-body-top">
+                    <div>
+                      <label class="mg-b-0">Sales</label>
+                      <h2>156</h2>
+                    </div>
+                    <div>
+                      <label class="mg-b-0">Bounce Rate</label>
+                      <h2>33.50%</h2>
+                    </div>
+                    <div>
+                      <label class="mg-b-0">Product Views</label>
+                      <h2>3,123</h2>
+                    </div>
+                    <div>
+                      <label class="mg-b-0">Sessions</label>
+                      <h2>16,869</h2>
+                    </div>
+                  </div><!-- card-body-top -->
+                </div><!-- flot-chart-wrapper -->
+              </div><!-- card-body -->
+            </div><!-- card -->
+          </div>
+          <!--col -->
+        </div><!-- row -->
+        <!-- row -->
+      </div><!-- az-content-body -->
+    </div>
+  </div><!-- az-content -->
+
+  <!-- section footer end -->
+  <div class="copyright">
+    2019 All Rights Reserved.
+    <a href="https://html.design">Ayoba</a>
+  </div>
+
+  <script src="./Azia Responsive Bootstrap 4 Dashboard Template_files/jquery.min.js.download"></script>
+  <script src="./Azia Responsive Bootstrap 4 Dashboard Template_files/bootstrap.bundle.min.js.download"></script>
+  <script src="./Azia Responsive Bootstrap 4 Dashboard Template_files/ionicons.js.download"></script>
+  <script src="./Azia Responsive Bootstrap 4 Dashboard Template_files/jquery.flot.js.download"></script>
+  <script src="./Azia Responsive Bootstrap 4 Dashboard Template_files/jquery.flot.resize.js.download"></script>
+  <script src="./Azia Responsive Bootstrap 4 Dashboard Template_files/Chart.bundle.min.js.download"></script>
+  <script src="./Azia Responsive Bootstrap 4 Dashboard Template_files/jquery.peity.min.js.download"></script>
+
+  <script src="./Azia Responsive Bootstrap 4 Dashboard Template_files/azia.js.download"></script>
+  <script src="./Azia Responsive Bootstrap 4 Dashboard Template_files/chart.flot.sampledata.js.download"></script>
+  <script src="./Azia Responsive Bootstrap 4 Dashboard Template_files/dashboard.sampledata.js.download"></script>
+  <script src="./Azia Responsive Bootstrap 4 Dashboard Template_files/jquery.cookie.js.download"
+    type="text/javascript"></script>
+  <script>
+    $(function () {
+      'use strict'
+
+      var plot = $.plot('#flotChart', [{
+        data: flotSampleData3,
+        color: '#007bff',
+        lines: {
+          fillColor: { colors: [{ opacity: 0 }, { opacity: 0.2 }] }
+        }
+      }, {
+        data: flotSampleData4,
+        color: '#560bd0',
+        lines: {
+          fillColor: { colors: [{ opacity: 0 }, { opacity: 0.2 }] }
+        }
+      }], {
+        series: {
+          shadowSize: 0,
+          lines: {
+            show: true,
+            lineWidth: 2,
+            fill: true
+          }
+        },
+        grid: {
+          borderWidth: 0,
+          labelMargin: 8
+        },
+        yaxis: {
+          show: true,
+          min: 0,
+          max: 100,
+          ticks: [[0, ''], [20, '20K'], [40, '40K'], [60, '60K'], [80, '80K']],
+          tickColor: '#eee'
+        },
+        xaxis: {
+          show: true,
+          color: '#fff',
+          ticks: [[25, 'OCT 21'], [75, 'OCT 22'], [100, 'OCT 23'], [125, 'OCT 24']],
+        }
+      });
+
+      $.plot('#flotChart1', [{
+        data: dashData2,
+        color: '#00cccc'
+      }], {
+        series: {
+          shadowSize: 0,
+          lines: {
+            show: true,
+            lineWidth: 2,
+            fill: true,
+            fillColor: { colors: [{ opacity: 0.2 }, { opacity: 0.2 }] }
+          }
+        },
+        grid: {
+          borderWidth: 0,
+          labelMargin: 0
+        },
+        yaxis: {
+          show: false,
+          min: 0,
+          max: 35
+        },
+        xaxis: {
+          show: false,
+          max: 50
+        }
+      });
+
+      $.plot('#flotChart2', [{
+        data: dashData2,
+        color: '#007bff'
+      }], {
+        series: {
+          shadowSize: 0,
+          bars: {
+            show: true,
+            lineWidth: 0,
+            fill: 1,
+            barWidth: .5
+          }
+        },
+        grid: {
+          borderWidth: 0,
+          labelMargin: 0
+        },
+        yaxis: {
+          show: false,
+          min: 0,
+          max: 35
+        },
+        xaxis: {
+          show: false,
+          max: 20
+        }
+      });
+
+
+      //-------------------------------------------------------------//
+
+
+      // Line chart
+      $('.peity-line').peity('line');
+
+      // Bar charts
+      $('.peity-bar').peity('bar');
+
+      // Bar charts
+      $('.peity-donut').peity('donut');
+
+      var ctx5 = document.getElementById('chartBar5').getContext('2d');
+      new Chart(ctx5, {
+        type: 'bar',
+        data: {
+          labels: [0, 1, 2, 3, 4, 5, 6, 7],
+          datasets: [{
+            data: [2, 4, 10, 20, 45, 40, 35, 18],
+            backgroundColor: '#560bd0'
+          }, {
+            data: [3, 6, 15, 35, 50, 45, 35, 25],
+            backgroundColor: '#cad0e8'
+          }]
+        },
+        options: {
+          maintainAspectRatio: false,
+          tooltips: {
+            enabled: false
+          },
+          legend: {
+            display: false,
+            labels: {
+              display: false
+            }
+          },
+          scales: {
+            yAxes: [{
+              display: false,
+              ticks: {
+                beginAtZero: true,
+                fontSize: 11,
+                max: 80
+              }
+            }],
+            xAxes: [{
+              barPercentage: 0.6,
+              gridLines: {
+                color: 'rgba(0,0,0,0.08)'
+              },
+              ticks: {
+                beginAtZero: true,
+                fontSize: 11,
+                display: false
+              }
+            }]
+          }
+        }
+      });
+
+      // Donut Chart
+      var datapie = {
+        labels: ['Search', 'Email', 'Referral', 'Social', 'Other'],
+        datasets: [{
+          data: [25, 20, 30, 15, 10],
+          backgroundColor: ['#6f42c1', '#007bff', '#17a2b8', '#00cccc', '#adb2bd']
+        }]
+      };
+
+      var optionpie = {
+        maintainAspectRatio: false,
+        responsive: true,
+        legend: {
+          display: false,
+        },
+        animation: {
+          animateScale: true,
+          animateRotate: true
+        }
+      };
+
+      // For a doughnut chart
+      var ctxpie = document.getElementById('chartDonut');
+      var myPieChart6 = new Chart(ctxpie, {
+        type: 'doughnut',
+        data: datapie,
+        options: optionpie
+      });
+
+    });
+  </script>
+
+
+  <div class="az-navbar-backdrop"></div>
+</body>
+
+</html>

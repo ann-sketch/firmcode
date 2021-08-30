@@ -1,5 +1,13 @@
 /*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
 
+.last img {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    margin-left: 70px;
+}
 
 /*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
 
@@ -8,6 +16,7 @@
     .header-search {
         padding: 15px 0px;
     }
+
 }
 
 
@@ -188,10 +197,8 @@ width: 30%;
 .adderess_text { font-size: 20px;}  
 .dummy_text { margin-top: 45px;}
 .email_box {  width: 95%; padding: 20px 0px;}
-.last{ padding-left: 12px !important; }
-
-
-
+.last{ 
+    padding-left: 12px !important; }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {

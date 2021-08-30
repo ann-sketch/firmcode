@@ -26,6 +26,7 @@
 * {
      box-sizing: border-box !important;
      transition: ease all 0.5s;
+     font-family: sans-serif;
 }
 
 html {
@@ -207,7 +208,7 @@ button {
 }
 
 .layout_padding {
-     padding-top: 90px;
+     padding-top: 20px;
      padding-bottom: 90px;
 }
 
@@ -321,7 +322,9 @@ body{
     background-size:cover;
 }
 .slide-wrapper{display:inline;}
-.slide-wrapper .container{padding:0;}
+.slide-wrapper .container{
+    padding:0;
+}
 
 
 /*------------------------------ vertical bootstrap slider----------------------------*/
@@ -361,7 +364,7 @@ body{
 }
 .carousel-indicators li{
     display:block; margin-bottom:5px; border:1px solid #00a199; 
-    margin-bottom: 5px;}
+    margin-bottom: 5px;
     
 }
 .carousel-indicators li.active{
@@ -371,8 +374,10 @@ body{
 
 .collection_section{ width: 100%; float: left; padding-bottom: 0px; }
 .new_text{
+    font-weight: bold;
 	width: 100%;
 	float: left;
+    margin-bottom: 11px;
 	font-size: 24pt;
 	color: #0c0116;
 }
@@ -490,12 +495,17 @@ body{
 .collection_text{ 
     width: 100%; 
     float: left; 
-    color: #ffffff; 
+    color: #000000; 
     text-align: center; 
     font-weight: bold; 
-    font-size: 40px; 
-    background-color: #db5660;
-    padding: 30px 0px;  
+    font-size: 30px;
+    background-color: #ffffff;
+    padding: 10px 0;  
+}
+
+.collection_text_paragraph p {
+    margin: 5px;
+    font-size: 24px;
 }
 
 .sale_text{
@@ -530,7 +540,6 @@ body{
 	float: left;
 	background-color: #ff4e5b;
 	height: auto;
-
 }
 
 .best_shoes {
@@ -541,6 +550,8 @@ body{
     padding: 20px 20px 20px 0px;
     margin-top: 15px;
     margin-bottom: 15px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .best_text{
@@ -557,6 +568,7 @@ body{
 	text-align: center;
 	min-height: 220px;
 }
+
 
 .star_text{
 	width: 100%;
@@ -749,6 +761,9 @@ a:hover {
     padding: 10px 0px;
     background-color: #ff4e5b;
     font-family: Poppins;
+    border-top: 1px solid white;
+    position: fixed;
+    bottom: 0;
 }
 
 .copyright a{ color: #ffffff; }
@@ -794,4 +809,27 @@ a:hover {
     width: 100%;
     height: auto;
     background: #0c0116;
+}
+
+.purchase-btn {
+    width: 100%;
+    float: left;
+    background-color: #ff4e5b;
+    height: 50px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.done-btn {
+    background-color: #ff4e5b;
+    height: 50px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 0 10px;
 }
