@@ -5,6 +5,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
 
 /*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
  2) font-family: 'Poppins', sans-serif;
@@ -215,11 +216,12 @@ button {
 .header_section{
 	width: 100%;
 	float: left;
-	background-image: url(../images/banner.png);
+	/* background-image: url(../images/banner.png); */
 	height: auto;
 	padding: 20px 0px;
 	background-size: 100%;
 	background-repeat: no-repeat;
+    background-color: #fdb933;
 }
 
 .padding_0{ width: 100%; float: left; }
@@ -255,7 +257,7 @@ button {
 }
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color: #db5660;
+    color: #0061a2;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0.9rem;
@@ -268,7 +270,7 @@ button {
 	width: 100%;
 	float: left;
 	font-size: 30pt;
-	color: #db5660;
+	color: #0061a2;
 }
 
 .mens_text{
@@ -290,7 +292,7 @@ button {
 	width: 32%;
 	height: 50px;
 	color: #ffffff;
-	background-color: #ff4e5b;
+	background-color: #0061a2;
 	color: #ffffff;
 	font-size: 16pt;
  }
@@ -300,7 +302,7 @@ button {
 	height: 50px;
 	color: #ffffff;
 	background-color: #ffffff;
-	color: #ff4e5b;
+	color: #0061a2;
 	font-size: 16pt;
 	margin-left: 25px;
  }
@@ -473,7 +475,7 @@ body{
 	width: 32%;
 	height: 50px;
 	color: #ffffff;
-	background-color: #ff4e5b;
+	background-color: #0061a2;
 	color: #ffffff;
 	font-size: 16pt;	
 	margin-top: 35px;
@@ -529,7 +531,7 @@ body{
 	width: 50%;
 	height: 50px;
 	color: #ffffff;
-	background-color: #ff4e5b;
+	background-color: #0061a2;
 	color: #ffffff;
 	font-size: 16pt;	
 	margin-top: 35px;
@@ -538,7 +540,7 @@ body{
 .gallery_section{
 	width: 100%;
 	float: left;
-	background-color: #ff4e5b;
+	background-color: #0061a2;
 	height: auto;
 }
 
@@ -646,7 +648,7 @@ body{
     text-align: center;
 }
 .main_bt {
-    background: #ff4e5b;
+    background: #0061a2;
     border: none;
     width: 170px;
     height: 58px;
@@ -759,7 +761,7 @@ a:hover {
     color: #ffffff;
     text-align: center;
     padding: 10px 0px;
-    background-color: #ff4e5b;
+    background-color: #0061a2;
     font-family: Poppins;
     border-top: 1px solid white;
     position: fixed;
@@ -792,7 +794,7 @@ a:hover {
 .subscribr_bt {
     width: 80%;
     float: right;
-    background-color: #ff4e5b;
+    background-color: #0061a2;
     font-size: 13pt;
     height: 50px;
     color: #ffffff;
@@ -814,7 +816,7 @@ a:hover {
 .purchase-btn {
     width: 100%;
     float: left;
-    background-color: #ff4e5b;
+    background-color: #0061a2;
     height: 50px;
     font-size: 20px;
     color: #ffffff;
@@ -824,7 +826,7 @@ a:hover {
 }
 
 .done-btn {
-    background-color: #ff4e5b;
+    background-color: #0061a2;
     height: 50px;
     font-size: 20px;
     color: #ffffff;
@@ -832,4 +834,12 @@ a:hover {
     margin-top: 20px;
     border-radius: 10px;
     padding: 0 10px;
+}
+
+.logo-text {
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 2px 0px 2px #000 ;
+    font-family: 'Calligraffitti', cursive;
+    font-size: 32px;
 }
